@@ -9,3 +9,6 @@
     <td><%= @article.description %></td>
   </tr>
 </table>
+<%= link_to "Return to articles list", articles_path %> |
+<%= link_to "Edit", edit_article_path %> |
+<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure?"}%>
